@@ -1,5 +1,5 @@
 var cols, rows;
-var w = 30
+var w = 40
 var grid = [];
 
 var current;
@@ -7,7 +7,8 @@ var current;
 var stack = [];
 
 function setup(){
-	createCanvas(window.innerWidth - 10, window.innerHeight - 10);
+	var canvas = createCanvas(1000, 1000);
+	canvas.parent("maze")
 	cols = floor(width/w);
 	rows = floor(height/w);
 	frameRate(50); //increase to speed up
